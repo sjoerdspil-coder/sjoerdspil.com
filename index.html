@@ -548,6 +548,17 @@ html:not(.js) .rev-dist .fill{width:100%}
 /* toegankelijkheid */
 .thumb{font:inherit;padding:0}
 .thumb:focus-visible,.vbtn:focus-visible,.btn:focus-visible,.hicon:focus-visible,.qty button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+/* mobiele opruiming */
+@media(max-width:640px){
+  .search{display:none}
+  .hdr .in{gap:14px;justify-content:space-between}
+  .msep{display:none}
+  .metaline{gap:6px 16px}
+  .crumbs{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+@media(max-width:840px){
+  body{padding-bottom:72px}
+}
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.01ms !important;transition-duration:.01ms !important}
   .reveal{opacity:1;transform:none}
@@ -676,7 +687,7 @@ html:not(.js) .rev-dist .fill{width:100%}
 
       <div class="pricebox" id="pricebox">
         <div class="pricerow"><span class="rating-price" id="ratingPrice" title="Prijs is exclusief enthousiasme — dat zit er standaard bij.">STRONG HIRE <small>/ rating</small></span></div>
-        <div class="rate-line" data-i18n="rate"><b>$75</b>/uur freelance · vaste rol in overleg &nbsp;<a class="rate-src" href="https://www.upwork.com/freelancers/sjoerds4" target="_blank" rel="noopener">✓ tarief geverifieerd op Upwork</a></div>
+        <div class="rate-line" data-i18n="rate"><b>€75</b>/uur freelance · vaste rol in overleg &nbsp;<a class="rate-src" href="https://www.upwork.com/freelancers/sjoerds4" target="_blank" rel="noopener">✓ geverifieerd op Upwork ($75)</a></div>
         <div class="kort" data-i18n="kort">✓ Code STRONGHIRE toegepast — eerste gesprek altijd gratis</div>
         <div class="qty-row">
           <button class="btn buy co-open" data-i18n="ctabuy">🛒 Toevoegen aan winkelwagen</button>
@@ -1329,7 +1340,7 @@ var EN={
  usps:"<div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">📈</span><span><b>+50% conversion, proven</b><small>Golfdiscountstore.nl, 2023</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">⚙️</span><span><b>Strong ROI through automation</b><small>webshop partly automated</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🤖</span><span><b>AI literacy 5/5</b><small>builds his own internal apps &amp; tools</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🛡️</span><span><b>Honest about mistakes</b><small>incl. verified 1-star review</small></span></div>",
  vhead:"VERSION",
  vb3:"Data &amp; Automation",
- rate:"<b>$75</b>/hr freelance · permanent role negotiable &nbsp;<a class=\"rate-src\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">✓ rate verified on Upwork</a>",
+ rate:"<b>€75</b>/hr freelance · permanent role negotiable &nbsp;<a class=\"rate-src\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">✓ verified on Upwork ($75)</a>",
  kort:"✓ Code STRONGHIRE applied — first call always free",
  ctabuy:"🛒 Add to cart",
  wabtn:"💬 WhatsApp directly — reply within 1 hour",
