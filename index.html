@@ -195,6 +195,12 @@ html[lang="en"] .g-meter .gm-doel::after{content:"GOAL"}
 .thumb{flex:1;aspect-ratio:1;border-radius:8px;border:2px solid transparent;background:var(--card);display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer;transition:border .15s}
 .thumb.on{border-color:var(--blue)}
 .thumb:hover{border-color:#b9c5ff}
+.thumb svg{width:24px;height:24px;color:var(--mut)}
+.thumb.on svg{color:var(--blue)}
+.bi svg{width:30px;height:30px;color:var(--blue)}
+.aico svg{width:42px;height:42px;color:#9aa0b5}
+.g-emoji svg{width:58px;height:58px;color:#b9c5ff}
+#chatfab svg{width:26px;height:26px;vertical-align:middle}
 
 /* buy column */
 .title{font-size:clamp(26px,3.2vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
@@ -230,7 +236,7 @@ html[lang="en"] .g-meter .gm-doel::after{content:"GOAL"}
 .usp .ui{display:none}
 .usp b{display:inline;font-size:14px;font-weight:600}
 .usp small{display:inline;font-size:12.5px;color:var(--mut)}
-.usp small::before{content:" — "}
+.usp small::before{content:"· "}
 
 /* variants */
 .variants{margin:0 0 26px}
@@ -298,7 +304,7 @@ section{margin:34px 0}
 .spec .k{color:var(--mut)}
 .spec .v{font-weight:600;text-align:right}
 .inbox{padding:18px 22px;display:flex;flex-direction:column;gap:9px;font-size:14px;color:var(--ink2)}
-.inbox div::before{content:"📦 ";font-size:13px}
+.inbox div::before{content:"✓ ";color:var(--green);font-weight:800;font-size:13px}
 .inbox b{color:var(--ink)}
 
 /* van de maker */
@@ -570,7 +576,7 @@ html:not(.js) .rev-dist .fill{width:100%}
 
 <div class="printjoke" data-i18n="printjoke">Geprint? Ouderwets — Sjoerd automatiseert dit soort dingen. Maar fijn dat u er zo serieus naar kijkt. (De interactieve versie staat op sjoerdspil.com)</div>
 
-<div class="announce" data-i18n="ann">💬 <b>Nu besteld, binnen 1 uur reactie op WhatsApp</b> · gebruik code <span class="code">STRONGHIRE</span> voor een gratis eerste gesprek</div>
+<div class="announce" data-i18n="ann"><b>Nu besteld, binnen 1 uur reactie op WhatsApp</b> · gebruik code <span class="code">STRONGHIRE</span> voor een gratis eerste gesprek</div>
 
 <header class="hdr"><div class="in">
   <a class="logo" href="#">SPIL<span>.SHOP</span></a>
@@ -647,7 +653,7 @@ html:not(.js) .rev-dist .fill{width:100%}
         </div>
         <div class="gslide" data-i18n="g4">
           <div class="g-kick sA">FIRMWARE · DAGELIJKS GEÜPDATET</div>
-          <div class="g-emoji s4-bot">🤖</div>
+          <div class="g-emoji s4-bot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="9" rx="2"/><line x1="12" y1="8" x2="12" y2="5.5"/><circle cx="12" cy="4.5" r="1" fill="currentColor" stroke="none"/><circle cx="9.5" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M9.5 14.8h5"/></svg></div>
           <div class="g-main sB">Bouwt eigen<br>AI-tools</div>
           <div class="s4-term"><span class="s4-type">&gt; ai_tool.build() ✓ live</span></div>
           <div class="g-sub s4-d">Interne apps en tools ontwikkeld met behulp van AI. Webshop deels geautomatiseerd, sterke ROI.</div>
@@ -660,11 +666,11 @@ html:not(.js) .rev-dist .fill{width:100%}
             <circle class="s5-top" cx="140" cy="8" r="4.5"/>
           </svg>
           <div class="g-cap s5-labels"><span class="l1">VAKKENVULLER</span> <span class="p1">▸</span> <span class="l2">ONDERNEMER</span> <span class="p2">▸</span> <span class="l3">MANAGER</span></div>
-          <div class="g-sub s5-d">Twaalf jaar praktijk. Elke sport van de ladder zelf beklommen — en gemeten.</div>
+          <div class="g-sub s5-d">Twaalf jaar praktijk. Elke sport van de ladder zelf beklommen, en gemeten.</div>
         </div>
       </div>
       <div class="thumbs" id="thumbs">
-        <button class="thumb on" aria-label="Foto 1: huidige rol — Marketing Manager bij Ronada">🎯</button><button class="thumb" aria-label="Foto 2: de filosofie">🧭</button><button class="thumb" aria-label="Foto 3: +50% conversie">📈</button><button class="thumb" aria-label="Foto 4: bouwt eigen AI-tools">🤖</button><button class="thumb" aria-label="Foto 5: het traject 2014–2026">🪜</button>
+        <button class="thumb on" aria-label="Foto 1: huidige rol, Marketing Manager bij Ronada"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg></button><button class="thumb" aria-label="Foto 2: de filosofie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><polygon points="12,7 14.2,12 12,17 9.8,12" fill="currentColor" stroke="none"/></svg></button><button class="thumb" aria-label="Foto 3: +50% conversie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><polyline points="5 15 10 10 13 13 19 6"/><polyline points="15 6 19 6 19 10"/></svg></button><button class="thumb" aria-label="Foto 4: bouwt eigen AI-tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="9" rx="2"/><line x1="12" y1="8" x2="12" y2="5.5"/><circle cx="12" cy="4.5" r="1" fill="currentColor" stroke="none"/><circle cx="9.5" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M9.5 14.8h5"/></svg></button><button class="thumb" aria-label="Foto 5: het traject 2014–2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="4" x2="9" y2="20"/><line x1="15" y1="4" x2="15" y2="20"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="15" y2="16"/></svg></button>
       </div>
     </div>
 
@@ -689,18 +695,18 @@ html:not(.js) .rev-dist .fill{width:100%}
       <div class="pricebox" id="pricebox">
         <div class="pricerow"><span class="rating-price" id="ratingPrice" data-i18n="priceline" title="Prijs is exclusief enthousiasme — dat zit er standaard bij.">€75 <small>/uur freelance</small></span></div>
         <div class="rate-line" data-i18n="rate"><a class="rate-src" href="https://www.upwork.com/freelancers/sjoerds4" target="_blank" rel="noopener">✓ tarief geverifieerd op Upwork ($75)</a></div>
-        <div class="kort" data-i18n="kort">✓ Code STRONGHIRE toegepast — eerste gesprek altijd gratis</div>
+        <div class="kort" data-i18n="kort">✓ Code STRONGHIRE toegepast · eerste gesprek altijd gratis</div>
         <div class="qty-row">
-          <button class="btn buy co-open" data-i18n="ctabuy">🛒 Toevoegen aan winkelwagen</button>
+          <button class="btn buy co-open" data-i18n="ctabuy">Toevoegen aan winkelwagen</button>
         </div>
-        <a class="btn save" data-i18n="wabtn" href="https://wa.me/31631157721?text=Hoi%20Sjoerd%2C%20we%20zagen%20je%20profiel%20op%20SPIL.SHOP%20en%20willen%20graag%20in%20gesprek." target="_blank" rel="noopener">💬 App direct via WhatsApp — reactie binnen 1 uur</a>
-        <div class="watchline" data-i18n="watchline">🔥 <span id="watchers">3</span> recruiters bekijken dit profiel nu</div>
+        <a class="btn save" data-i18n="wabtn" href="https://wa.me/31631157721?text=Hoi%20Sjoerd%2C%20we%20zagen%20je%20profiel%20op%20SPIL.SHOP%20en%20willen%20graag%20in%20gesprek." target="_blank" rel="noopener">💬 App direct via WhatsApp · reactie binnen 1 uur</a>
+        <div class="watchline" data-i18n="watchline"><span id="watchers">3</span> recruiters bekijken dit profiel nu</div>
         <div class="trust" data-i18n="trust"><span>Levenslange garantie op werkethos</span><span>Waarborg: eerlijkheid</span><span>Gratis bezorging in heel NL</span></div>
       </div>
       <div class="servicebox">
         <div class="pc-row"><input id="pcIn" placeholder="1234 AB" maxlength="8" aria-label="Postcode"><button id="pcBtn" data-i18n="pcbtn">Check levertijd</button></div>
         <div class="pc-res" id="pcRes"></div>
-        <button class="pricealert" id="priceAlert" data-i18n="palert">🔔 Houd mij op de hoogte van prijsdalingen</button>
+        <button class="pricealert" id="priceAlert" data-i18n="palert">Houd mij op de hoogte van prijsdalingen</button>
       </div>
     </div>
   </main>
@@ -709,11 +715,11 @@ html:not(.js) .rev-dist .fill{width:100%}
   <section class="reveal">
     <h2 class="sec-h" data-i18n="h-bundle">Vaak samen afgenomen</h2>
     <div class="card bundle" data-i18n="bundle">
-      <div class="bitem"><div class="bi">👤</div><b>Sjoerd Spil</b><small>editie 2026</small></div>
+      <div class="bitem"><div class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 19c1.5-3.5 4-5 6.5-5s5 1.5 6.5 5"/></svg></div><b>Sjoerd Spil</b><small>editie 2026</small></div>
       <div class="bplus">+</div>
-      <div class="bitem"><div class="bi">📊</div><b>KPI-dashboards</b><small>dagelijks inzicht, live</small></div>
+      <div class="bitem"><div class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 20h16" stroke-width="1.8"/><line x1="7.5" y1="17" x2="7.5" y2="12"/><line x1="12" y1="17" x2="12" y2="7"/><line x1="16.5" y1="17" x2="16.5" y2="14"/></svg></div><b>KPI-dashboards</b><small>dagelijks inzicht, live</small></div>
       <div class="bplus">+</div>
-      <div class="bitem"><div class="bi">🤖</div><b>Eigen AI-tools</b><small>intern ontwikkeld</small></div>
+      <div class="bitem"><div class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="9" rx="2"/><line x1="12" y1="8" x2="12" y2="5.5"/><circle cx="12" cy="4.5" r="1" fill="currentColor" stroke="none"/><circle cx="9.5" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M9.5 14.8h5"/></svg></div><b>Eigen AI-tools</b><small>intern ontwikkeld</small></div>
       <div class="bsum">
         <div class="bs1">Bundelprijs:</div>
         <div class="bs2">1 goed gesprek</div>
@@ -728,9 +734,9 @@ html:not(.js) .rev-dist .fill{width:100%}
     <div class="card maker">
       <img class="maker-foto" src="sjoerd.jpg.png" alt="Sjoerd Spil in de Douro-vallei" loading="lazy">
       <div class="maker-txt" data-i18n="maker">
-        <p>Ik ben in 2014 begonnen met vakken vullen bij de Albert Heijn in Castricum. Daarna heb ik vloeren gelegd, coronatests afgenomen op Texel en 's nachts een hotel bewaakt. Ondertussen bouwde ik webshops, verkocht ik via Amazon en runde ik een social media bureau — waar ik vrijwel niets aan verdiende, omdat ik te lief was met de prijzen. Duurste les ooit, beste les ooit.</p>
-        <p>Vandaag ben ik marketing manager bij Ronada en doe ik waar ik goed in ben: data lezen, processen automatiseren en webshops laten groeien. Geen diploma's aan de muur — wel twaalf jaar praktijk, 238 internationale opdrachten en een webshop die deels zichzelf runt.</p>
-        <p>Deze pagina is precies hoe ik werk: meten, testen, optimaliseren. Als u tot hier gelezen heeft, werkt het.</p>
+        <p>Ik ben in 2014 begonnen met vakken vullen bij de Albert Heijn in Castricum. Daarna heb ik vloeren gelegd, coronatests afgenomen op Texel en 's nachts een hotel bewaakt. Ondertussen bouwde ik webshops, verkocht ik via Amazon en runde ik een social media bureau, waar ik vrijwel niets aan verdiende omdat ik te lief was met de prijzen. Duurste les ooit, beste les ooit.</p>
+        <p>Vandaag ben ik marketing manager bij Ronada en doe ik waar ik goed in ben: data lezen, processen automatiseren en webshops laten groeien. Geen diploma's aan de muur, wel twaalf jaar praktijk, 238 internationale opdrachten en een webshop die deels zichzelf runt.</p>
+        <p>Deze pagina is hoe ik werk: eerst meten, dan verbeteren. Als u tot hier gelezen heeft, werkt het.</p>
         <div class="maker-sig">— Sjoerd</div>
       </div>
     </div>
@@ -741,7 +747,7 @@ html:not(.js) .rev-dist .fill{width:100%}
     <h2 class="sec-h" data-i18n="h-specs">Specificaties</h2>
     <div class="card specs" data-i18n="specs">
       <div class="spec"><span class="k">Merk</span><span class="v">Spil</span></div>
-      <div class="spec"><span class="k">In bedrijf sinds</span><span class="v">2014 — ononderbroken</span></div>
+      <div class="spec"><span class="k">In bedrijf sinds</span><span class="v">2014, ononderbroken</span></div>
       <div class="spec"><span class="k">Locatie</span><span class="v">Castricum, Noord-Holland</span></div>
       <div class="spec"><span class="k">Aandrijving</span><span class="v">data</span></div>
       <div class="spec"><span class="k">Versnelling</span><span class="v">automatisering</span></div>
@@ -751,9 +757,9 @@ html:not(.js) .rev-dist .fill{width:100%}
       <div class="spec"><span class="k">Firmware</span><span class="v">wordt dagelijks geüpdatet (AI)</span></div>
       <div class="spec"><span class="k">Compatibiliteit</span><span class="v">teams, externe partijen, marketplaces</span></div>
       <div class="spec"><span class="k">Internationaal getest</span><span class="v">238 Upwork-opdrachten (★4,7)</span></div>
-      <div class="spec"><span class="k">Energieverbruik</span><span class="v">laag — rust onder druk</span></div>
+      <div class="spec"><span class="k">Energieverbruik</span><span class="v">laag (rust onder druk)</span></div>
       <div class="spec"><span class="k">Nachtstand</span><span class="v">getest &amp; goedgekeurd ('22–'23)</span></div>
-      <div class="spec"><span class="k">Maat</span><span class="v">past in elk team — valt ruim uit qua verantwoordelijkheid</span></div>
+      <div class="spec"><span class="k">Maat</span><span class="v">past in elk team, valt ruim uit qua verantwoordelijkheid</span></div>
     </div>
   </section>
 
@@ -761,12 +767,12 @@ html:not(.js) .rev-dist .fill{width:100%}
   <section class="reveal">
     <h2 class="sec-h" data-i18n="h-inbox">Wat zit er in de doos?</h2>
     <div class="card inbox" data-i18n="inbox">
-      <div><b>12+ jaar praktijkervaring</b> — van winkelvloer tot management</div>
+      <div><b>12+ jaar praktijkervaring</b>: van winkelvloer tot management</div>
       <div><b>2 eigen ondernemingen</b> aan inzichten (Spindle Supply &amp; Social Spil)</div>
-      <div><b>KPI-structuur &amp; dashboards</b> — opstellen, beheren, bewaken</div>
-      <div><b>Marketplace- &amp; webshopoptimalisatie</b> — incl. bewezen +50% conversie</div>
-      <div><b>Zelfgebouwde AI-tools</b> — interne apps, automatiseringen</div>
-      <div><b>Eerlijkheid over fouten</b> — inclusief de les van Social Spil (zie reviews)</div>
+      <div><b>KPI-structuur &amp; dashboards</b>: opstellen, beheren, bewaken</div>
+      <div><b>Marketplace- &amp; webshopoptimalisatie</b>: incl. bewezen +50% conversie</div>
+      <div><b>Zelfgebouwde AI-tools</b>: interne apps, automatiseringen</div>
+      <div><b>Eerlijkheid over fouten</b>: inclusief de les van Social Spil (zie reviews)</div>
     </div>
   </section>
 
@@ -824,7 +830,7 @@ html:not(.js) .rev-dist .fill{width:100%}
           <div>
             <div class="rs">★★★★<span class="star-part">★</span> <b style="color:var(--ink);font-size:14px">4,7</b> <span style="color:var(--mut);font-size:12px">· 135 klantreviews</span></div>
             <div class="rt">"238 internationale opdrachten als CMO / Growth Strategist"</div>
-            <p>Tijdens de Social Spil-jaren óók actief op het wereldtoneel: <b>238 afgeronde opdrachten</b> voor internationale opdrachtgevers, onder het motto <em>"I help businesses scale smart &amp; sustainably."</em> Los van dit CV te controleren — de reviews staan er zwart op wit.</p>
+            <p>Tijdens de Social Spil-jaren óók actief op het wereldtoneel: <b>238 afgeronde opdrachten</b> voor internationale opdrachtgevers, onder het motto <em>"I help businesses scale smart &amp; sustainably."</em> Los van dit CV te controleren: de reviews staan er zwart op wit.</p>
             <div class="who">Upwork · freelance · <b>✓ extern platform, niet door de verkoper te bewerken</b></div>
           </div>
           <a class="btn upbtn" href="https://www.upwork.com/freelancers/sjoerds4" target="_blank" rel="noopener">Bekijk profiel op Upwork ↗</a>
@@ -833,20 +839,20 @@ html:not(.js) .rev-dist .fill{width:100%}
       <div class="rcard">
         <div class="rs">★<span class="off">★★★★</span></div>
         <div class="rt">"Vrijwel geen winst gemaakt"</div>
-        <p>Social media bedrijf met klanten in binnen- en buitenland. Zette contentprocessen op, stuurde een team in India aan, automatiseerde de informatiestromen — maar was te lief met de prijzen.</p>
+        <p>Social media bedrijf met klanten in binnen- en buitenland. Zette contentprocessen op, stuurde een team in India aan, automatiseerde de informatiestromen. Maar hij was te lief met de prijzen.</p>
         <div class="who">Social Spil, Castricum · 2019–2021 · <b>✓ geverifieerd (door hemzelf)</b></div>
         <div class="sellerreply"><b>REACTIE VAN VERKOPER:</b> Klopt helemaal. Duurste les ooit, beste les ooit: marges, salesstructuur en schaalbaarheid zitten in de huidige versie ingebouwd. — Sjoerd</div>
       </div>
       <div class="rcard">
         <div class="rs">★★★★★</div>
         <div class="rt">"Sliep zelf nooit tijdens de dienst"</div>
-        <p>Hield als nachtwaker toezicht op hotel en gasten. Nam verantwoordelijkheid voor rust en veiligheid en handelde zelfstandig bij onvoorziene situaties — midden in de nacht.</p>
+        <p>Hield 's nachts toezicht op hotel en gasten. Rustig, zelfstandig, betrouwbaar.</p>
         <div class="who">Hotel Huize Koningsbosch, Bakkum · 2022–2023 · <b>✓ geverifieerde werkgever</b></div>
       </div>
       <div class="rcard">
         <div class="rs">★★★★★</div>
         <div class="rt">"Beheerde zelfstandig een testlocatie op Texel"</div>
-        <p>Professioneel in drukke en onverwachte situaties, begeleidde bezoekers en hield het hoofd koel op piekmomenten. Eiland-proof.</p>
+        <p>Draaide in z'n eentje onze locatie op Texel. Ook als de rij lang werd bleef hij er rustig onder.</p>
         <div class="who">Covidia, Beverwijk / Texel · 2021–2022 · <b>✓ geverifieerde werkgever</b></div>
       </div>
       <div class="rcard">
@@ -858,13 +864,13 @@ html:not(.js) .rev-dist .fill{width:100%}
       <div class="rcard">
         <div class="rs">★★★★★</div>
         <div class="rt">"Begon onderaan, vulde alles"</div>
-        <p>Vakken vullen, goederen splitsen en lossen, dagelijkse winkelprocessen ondersteunen. De eerste sport van de ladder — nooit overgeslagen.</p>
+        <p>Vakken gevuld, goederen gelost, nooit te laat. De eerste sport van de ladder.</p>
         <div class="who">Albert Heijn, Castricum · 2014–2017 · <b>✓ geverifieerde werkgever</b></div>
       </div>
       <div class="rcard">
         <div class="rs">★★★★★</div>
         <div class="rt">"Strak werk, ook op de vloer"</div>
-        <p>Legde en werkte vloeren af, klantgericht en nauwkeurig op locatie. Fysiek uitvoerend werk met oog voor detail — dezelfde precisie die nu in zijn dashboards zit.</p>
+        <p>Vloeren gelegd en afgewerkt, netjes en op tijd. Klanten waren tevreden.</p>
         <div class="who">Trickstyle, Castricum · 2017–2021 · <b>✓ geverifieerde werkgever</b></div>
       </div>
     </div>
@@ -876,23 +882,23 @@ html:not(.js) .rev-dist .fill{width:100%}
     <div class="card qa" data-i18n="qa">
       <details open>
         <summary>Is dit CV serieus bedoeld?</summary>
-        <div class="a">De cijfers en de loopbaan: <b>100% echt</b>. De vorm is een demonstratie — dit is wat er gebeurt als je iemand die dagelijks met conversie-optimalisatie werkt zijn eigen CV laat bouwen. Elke truc op deze pagina (urgentie, social proof, reviews, bundels) is een techniek die Sjoerd professioneel inzet. U ervaart zijn vak terwijl u het leest.</div>
+        <div class="a">De cijfers en de loopbaan: 100% echt. De vorm is een demonstratie: dit is wat er gebeurt als je iemand die dagelijks met conversie-optimalisatie werkt zijn eigen CV laat bouwen. Elke truc op deze pagina (urgentie, social proof, reviews, bundels) is een techniek die Sjoerd professioneel inzet. U ervaart zijn vak terwijl u het leest.</div>
       </details>
       <details>
         <summary>Waarom staat er maar 1 op voorraad?</summary>
-        <div class="a">Twaalf jaar praktijk, twee eigen bedrijven, één eerlijk gedocumenteerd verliesjaar en een bewezen +50% conversie in exact deze combinatie: die assemblagelijn is <b>gestopt na één exemplaar</b>.</div>
+        <div class="a">Twaalf jaar praktijk, twee eigen bedrijven, één eerlijk gedocumenteerd verliesjaar en een bewezen +50% conversie in exact deze combinatie: die assemblagelijn is gestopt na één exemplaar.</div>
       </details>
       <details>
         <summary>Doet dit product ook aan verlies?</summary>
-        <div class="a">Eén keer, gedocumenteerd (zie de 1-ster review van Social Spil). De marges waren te laag omdat hij te lief was met de prijzen. Die fout is <b>eerlijk geboekt en verwerkt in de huidige versie</b>: marges, salesstructuur en schaalbaarheid zitten er nu standaard in.</div>
+        <div class="a">Eén keer, gedocumenteerd (zie de 1-ster review van Social Spil). De marges waren te laag omdat hij te lief was met de prijzen. Die fout is eerlijk geboekt en verwerkt in de huidige versie: marges, salesstructuur en schaalbaarheid zitten er nu standaard in.</div>
       </details>
       <details>
         <summary>Is dit product compatibel met ons team?</summary>
-        <div class="a">Getest met externe marketingpartijen, een team in India, hotelgasten om 3 uur 's nachts en piekdrukte op een testlocatie op Texel. <b>Werkt met iedereen</b> — en vertaalt data naar acties die het hele team snapt.</div>
+        <div class="a">Getest met externe marketingpartijen, een team in India, hotelgasten om 3 uur 's nachts en piekdrukte op een testlocatie op Texel. Werkt met iedereen: en vertaalt data naar acties die het hele team snapt.</div>
       </details>
       <details>
         <summary>Wat als het niet bevalt?</summary>
-        <div class="a">Retourneren is nog nooit nodig geweest. Dit model <b>meet zijn eigen prestaties</b> via KPI's en dashboards en stuurt zichzelf bij. Niet goed? Wordt beter.</div>
+        <div class="a">Retourneren is nog nooit nodig geweest. Dit model meet zijn eigen prestaties via KPI's en dashboards en stuurt zichzelf bij.</div>
       </details>
     </div>
   </section>
@@ -901,15 +907,15 @@ html:not(.js) .rev-dist .fill{width:100%}
   <section class="reveal">
     <h2 class="sec-h" data-i18n="h-also">Anderen bekeken ook</h2>
     <div class="alsogrid" data-i18n="also">
-      <div class="acard"><div class="aimg"><span>🦄</span><i class="abadge">NIET LEVERBAAR</i></div><h3>Junior met 10+ jaar ervaring</h3><div class="astars">☆☆☆☆☆</div><p>Bestaat niet. Ook niet bij andere aanbieders.</p></div>
-      <div class="acard"><div class="aimg"><span>🙊</span><i class="abadge">UITVERKOCHT</i></div><h3>Marketeer die fouten toegeeft</h3><div class="astars">★★★★★</div><p>Laatste exemplaar: zie boven aan deze pagina.</p></div>
-      <div class="acard"><div class="aimg"><span>😐</span><i class="abadge">RUIM OP VOORRAAD</i></div><h3>Gemiddelde marketeer</h3><div class="astars">★★★☆☆</div><p>Overal verkrijgbaar. Rating: MEH.</p></div>
+      <div class="acard"><div class="aimg"><span class="aico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><line x1="6.5" y1="6.5" x2="17.5" y2="17.5"/></svg></span><i class="abadge">NIET LEVERBAAR</i></div><h3>Junior met 10+ jaar ervaring</h3><div class="astars">☆☆☆☆☆</div><p>Bestaat niet. Ook niet bij andere aanbieders.</p></div>
+      <div class="acard"><div class="aimg"><span class="aico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-5 4z"/><polyline points="9 10 11.2 12.2 15.5 8"/></svg></span><i class="abadge">UITVERKOCHT</i></div><h3>Marketeer die fouten toegeeft</h3><div class="astars">★★★★★</div><p>Laatste exemplaar: zie boven aan deze pagina.</p></div>
+      <div class="acard"><div class="aimg"><span class="aico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="1" fill="currentColor" stroke="none"/><line x1="9" y1="15" x2="15" y2="15"/></svg></span><i class="abadge">RUIM OP VOORRAAD</i></div><h3>Gemiddelde marketeer</h3><div class="astars">★★★☆☆</div><p>Overal verkrijgbaar. Rating: MEH.</p></div>
     </div>
   </section>
 </div>
 
 <!-- CHATWIDGET -->
-<button id="chatfab" aria-label="Chat met Sjoerd">💬</button>
+<button id="chatfab" aria-label="Chat met Sjoerd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H10l-6 5z"/></svg></button>
 <div id="chatbox">
   <div class="ch" data-i18n="chh">Vraag het Sjoerd</div>
   <div class="cb">
@@ -935,7 +941,7 @@ html:not(.js) .rev-dist .fill{width:100%}
       <div><b>Sjoerd Spil — Marketing Manager<br>(editie 2026)</b><small>Uitvoering: uniek exemplaar · 1 stuk</small></div>
       <div class="dprice">€75/uur</div>
     </div>
-    <div class="d-note">✓ Kortingscode STRONGHIRE toegepast — eerste gesprek gratis</div>
+    <div class="d-note">✓ Kortingscode STRONGHIRE toegepast · eerste gesprek gratis</div>
     <div class="d-rows">
       <div class="d-row"><span>Subtotaal</span><span>1 goed gesprek</span></div>
       <div class="d-row"><span>Verzendkosten</span><span>gratis (heel NL)</span></div>
@@ -963,8 +969,8 @@ html:not(.js) .rev-dist .fill{width:100%}
           <div><b data-i18n="cosumb">Sjoerd Spil — Marketing Manager (editie 2026)</b><small id="coBundleNote">1 uniek exemplaar · binnen 1 uur reactie op WhatsApp</small></div>
           <div class="dprice" data-i18n="coprice">€75/uur</div>
         </div>
-        <div class="co-kort" data-i18n="cokort">✓ Kortingscode STRONGHIRE toegepast — eerste gesprek gratis</div>
-        <div class="co-intro" data-i18n="cointro">Vul uw gegevens in en plaats de bestelling — <b>Sjoerd neemt persoonlijk contact met u op</b> om de levering (het gesprek) in te plannen.</div>
+        <div class="co-kort" data-i18n="cokort">✓ Kortingscode STRONGHIRE toegepast · eerste gesprek gratis</div>
+        <div class="co-intro" data-i18n="cointro">Vul uw gegevens in en plaats de bestelling. Sjoerd neemt persoonlijk contact met u op om de levering (het gesprek) in te plannen.</div>
 
         <div class="field">
           <label for="coNaam" data-i18n="lb1">Naam *</label>
@@ -997,14 +1003,14 @@ html:not(.js) .rev-dist .fill{width:100%}
         <div class="field">
           <label data-i18n="lb7">Bezorging</label>
           <div class="shipopts" data-i18n="ship">
-            <label class="so"><input type="radio" name="bezorging" value="standaard" checked><span><b>Standaard</b> — kennismakingsgesprek<small>gratis</small></span></label>
-            <label class="so"><input type="radio" name="bezorging" value="express"><span><b>Express</b> — vandaag nog bellen<small>ook gratis</small></span></label>
-            <label class="so"><input type="radio" name="bezorging" value="afhalen"><span><b>Afhalen in Castricum</b> — koffie staat klaar<small>reistijd voor eigen rekening</small></span></label>
+            <label class="so"><input type="radio" name="bezorging" value="standaard" checked><span><b>Standaard</b>: kennismakingsgesprek<small>gratis</small></span></label>
+            <label class="so"><input type="radio" name="bezorging" value="express"><span><b>Express</b>: vandaag nog bellen<small>ook gratis</small></span></label>
+            <label class="so"><input type="radio" name="bezorging" value="afhalen"><span><b>Afhalen in Castricum</b>: koffie staat klaar<small>reistijd voor eigen rekening</small></span></label>
           </div>
         </div>
-        <div class="co-err" id="coErr" data-i18n="coerr">Vul de verplichte velden (*) even in — dan weet Sjoerd wie hij mag bellen.</div>
+        <div class="co-err" id="coErr" data-i18n="coerr">Vul de verplichte velden (*) even in, dan weet Sjoerd wie hij mag bellen.</div>
         <div class="co-submit"><button type="submit" class="btn buy" id="coSubmit" data-i18n="cosubmit">Bestelling plaatsen →</button></div>
-        <div class="co-priv" data-i18n="copriv">🔒 Uw gegevens gaan rechtstreeks en uitsluitend naar Sjoerd Spil — geen nieuwsbrieven, geen ruis. Alleen een goed gesprek.</div>
+        <div class="co-priv" data-i18n="copriv">Uw gegevens gaan rechtstreeks naar Sjoerd en verder niemand.</div>
       </form>
 
       <div class="co-done" id="coDone">
@@ -1016,7 +1022,7 @@ html:not(.js) .rev-dist .fill{width:100%}
           <div class="tstep t2"><span class="td">✓</span><span>Sjoerd heeft 'm gelezen</span></div>
           <div class="tstep t3"><span class="td">📞</span><span>Sjoerd neemt contact met u op</span></div>
         </div>
-        <p data-i18n="donep">Bedankt voor uw bestelling. <b>Sjoerd neemt persoonlijk contact met u op</b> om de levering in te plannen: een goed gesprek over uw webshop, uw data en uw groeidoelen. Haast? <a href="https://wa.me/31631157721" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">App direct via WhatsApp</a> — reactie binnen 1 uur.</p>
+        <p data-i18n="donep">Bedankt voor uw bestelling. Sjoerd neemt persoonlijk contact met u op om de levering in te plannen: een goed gesprek over uw webshop, uw data en uw groeidoelen. Haast? <a href="https://wa.me/31631157721" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">App direct via WhatsApp</a>, reactie binnen 1 uur.</p>
         <button class="btn save" id="coDoneClose" data-i18n="doneb">Verder winkelen</button>
       </div>
     </div>
@@ -1035,10 +1041,10 @@ html:not(.js) .rev-dist .fill{width:100%}
   <div class="f-in" data-i18n="fin">
     <div>
       <h4>Klantenservice</h4>
-      <a href="mailto:sjoerdspil@gmail.com">✉️ sjoerdspil@gmail.com</a>
-      <a href="tel:+31631157721">📞 +31 6 31157721</a>
-      <a href="#">📍 Castricum, Noord-Holland</a>
-      <a href="#">🕐 Reactietijd: sneller dan de bezorgdienst</a>
+      <a href="mailto:sjoerdspil@gmail.com">sjoerdspil@gmail.com</a>
+      <a href="tel:+31631157721">+31 6 31157721</a>
+      <a href="#">Castricum, Noord-Holland</a>
+      <a href="#">Reactietijd: sneller dan de bezorgdienst</a>
     </div>
     <div>
       <h4>Over SPIL.SHOP</h4>
@@ -1052,7 +1058,7 @@ html:not(.js) .rev-dist .fill{width:100%}
       <div class="f-pay">✓ uitdagende rol in e-commerce &amp; data<br>✓ ruimte voor eigen initiatief<br>✓ een team dat van cijfers houdt<br>✗ vage beloftes</div>
     </div>
   </div>
-  <div class="f-bottom" data-i18n="fbottom">© 2026 <b>SPIL.SHOP</b> — een demonstratie van conversie-optimalisatie, door en over Sjoerd Spil.<br>Deze webshop verkoopt precies één product en heeft daar geen spijt van. KvK: Kansen van Kansen.</div>
+  <div class="f-bottom" data-i18n="fbottom">© 2026 <b>SPIL.SHOP</b>: een demonstratie van conversie-optimalisatie, door en over Sjoerd Spil.<br>Deze webshop verkoopt precies één product en heeft daar geen spijt van. KvK: Kansen van Kansen.</div>
 </footer>
 
 <script>
@@ -1098,8 +1104,8 @@ var STR={
    "<b>E-commerce specialist</b><span> · webshops, marketplaces &amp; conversie</span>",
    "<b>Data &amp; Automatisering</b><span> · dashboards, KPI's &amp; eigen AI-tools</span>"],
   sugg:["marketing manager met bewezen conversie…","iemand die AI écht gebruikt…","data-gedreven én hands-on…","eerlijk over zijn fouten…","van vakkenvuller tot manager…"],
-  toasts:[["👀","<b>Recruiter uit Amsterdam</b> bekijkt dit profiel nu"],["🌍","<b>238 opdrachtgevers wereldwijd</b> gingen u voor (★4,7 op Upwork)"],["🛒","<b>Iemand uit Heiloo</b> heeft Sjoerd al in dienst 😉"]],
-  qtyToast:"<b>Uniek exemplaar</b> — er is er echt maar één van",
+  toasts:[["👀","<b>Recruiter uit Amsterdam</b> bekijkt dit profiel nu"],["🌍","<b>238 opdrachtgevers wereldwijd</b> gingen u voor (★4,7 op Upwork)"],["😉","Eerlijk: melding 1 was nep. Zo makkelijk werkt social proof dus."]],
+  qtyToast:"<b>Uniek exemplaar</b>: er is er echt maar één van",
   note1:"1 uniek exemplaar · binnen 1 uur reactie op WhatsApp",
   noteB:"bundel: Sjoerd + KPI-dashboards + AI-tools · binnen 1 uur reactie op WhatsApp",
   steps1:"<b>1. Gegevens</b> → 2. Bevestiging",
@@ -1122,8 +1128,8 @@ var STR={
    "<b>E-commerce specialist</b><span> · webshops, marketplaces &amp; conversion</span>",
    "<b>Data &amp; Automation</b><span> · dashboards, KPIs &amp; self-built AI tools</span>"],
   sugg:["marketing manager with proven conversion…","someone who actually uses AI…","data-driven and hands-on…","honest about his mistakes…","from shelf stacker to manager…"],
-  toasts:[["👀","<b>A recruiter from Amsterdam</b> is viewing this profile right now"],["🌍","<b>238 clients worldwide</b> went before you (★4.7 on Upwork)"],["🛒","<b>Someone from Heiloo</b> already hired Sjoerd 😉"]],
-  qtyToast:"<b>One of a kind</b> — there really is only one",
+  toasts:[["👀","<b>A recruiter from Amsterdam</b> is viewing this profile right now"],["🌍","<b>238 clients worldwide</b> went before you (★4.7 on Upwork)"],["😉","Honest: notification 1 was fake. That's how easily social proof works."]],
+  qtyToast:"<b>One of a kind</b>: there really is only one",
   note1:"1 unique copy · reply on WhatsApp within 1 hour",
   noteB:"bundle: Sjoerd + KPI dashboards + AI tools · reply on WhatsApp within 1 hour",
   steps1:"<b>1. Details</b> → 2. Confirmation",
@@ -1274,7 +1280,7 @@ coForm.addEventListener("submit",function(e){
   if(!ok) return;
   coSubmit.disabled=true; coSubmit.textContent=STR[L].sending;
   var payload={
-    _subject:"🛒 Nieuwe bestelling via SPIL.SHOP"+(isBundle?" (BUNDEL)":""),
+    _subject:"Nieuwe bestelling via SPIL.SHOP"+(isBundle?" (BUNDEL)":""),
     _template:"table",_captcha:"false",
     bestelling:isBundle?"Bundel: Sjoerd + KPI-dashboards + AI-tools":"Sjoerd Spil — Marketing Manager (editie 2026)",
     naam:naam.value.trim(),
@@ -1309,7 +1315,7 @@ coForm.addEventListener("submit",function(e){
         "Doelomzet 24 mnd: "+encodeURIComponent(payload.doelomzet_24m)+"%0A"+
         "E-mail: "+encodeURIComponent(payload.email)+"%0A"+
         "Telefoon: "+encodeURIComponent(payload.telefoon);
-      window.location.href="mailto:sjoerdspil@gmail.com?subject="+encodeURIComponent("🛒 Bestelling via SPIL.SHOP")+"&body="+body;
+      window.location.href="mailto:sjoerdspil@gmail.com?subject="+encodeURIComponent("Bestelling via SPIL.SHOP")+"&body="+body;
       success();
     });
 });
@@ -1329,32 +1335,32 @@ document.querySelectorAll(".reveal").forEach(function(r){io.observe(r);});
 
 /* ---------- TAALWISSEL NL/EN ---------- */
 var EN={
- ann:"💬 <b>Order now, reply on WhatsApp within 1 hour</b> · use code <span class=\"code\">STRONGHIRE</span> for a free first conversation",
+ ann:"<b>Order now, reply on WhatsApp within 1 hour</b> · use code <span class=\"code\">STRONGHIRE</span> for a free first conversation",
  crumbs:"Home  ›  Staff  ›  Marketing &amp; E-commerce  ›  <b>Sjoerd Spil (2026 edition)</b>",
  metaline:"<span><span class=\"stars\">★★★★★</span> <b>4.9</b> · <a href=\"#reviews\">9 roles</a></span><span class=\"msep\">|</span><a class=\"uplink\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">Upwork ★4.7 · 238 jobs</a><span class=\"msep\">|</span><span class=\"stockinline\">In stock: 1</span>",
  g1:"<div class=\"g-kick sA\">CURRENT ROLE · FEB 2025 — PRESENT</div><div class=\"g-main sB\">Marketing<br>Manager</div><div class=\"g-cap sC\">RONADA BV · HEILOO</div><div class=\"g-meter sC\"><div class=\"gm-top\"><span>GROWTH TARGETS 2025</span><span>STATUS</span></div><div class=\"gm-track\"><div class=\"gm-fill\"></div><div class=\"gm-doel\"></div></div><div class=\"gm-res\">✓ EXCEEDED BY A WIDE MARGIN</div></div>",
  g2:"<div class=\"g-kick\">THE PHILOSOPHY</div><div class=\"ph-rows\"><div class=\"ph-row ph-r1\"><span class=\"ph-ico\"><svg viewBox=\"0 0 40 40\" class=\"ph-compass\"><circle cx=\"20\" cy=\"20\" r=\"17\" fill=\"none\" stroke=\"#9fb0ff\" stroke-width=\"1.6\" opacity=\".55\"/><circle cx=\"20\" cy=\"20\" r=\"2\" fill=\"#fff\"/><g class=\"ph-needle\"><polygon points=\"20,7 23,20 20,33 17,20\" fill=\"#9fb0ff\"/><polygon points=\"20,7 23,20 20,20 17,20\" fill=\"#fff\"/></g></svg></span><span class=\"ph-txt\"><em>Data</em> as the compass.</span></div><div class=\"ph-row ph-r2\"><span class=\"ph-ico ph-chevs\"><i>❯</i><i>❯</i><i>❯</i></span><span class=\"ph-txt\"><em>Automation</em> as the accelerator.</span></div><div class=\"ph-row ph-r3\"><span class=\"ph-ico ph-bars\"><i class=\"b1\"></i><i class=\"b2\"></i><i class=\"b3\"></i></span><span class=\"ph-txt\"><em>Growth</em> as the standard.</span></div></div><div class=\"g-cap ph-cap\">SJOERD SPIL · CASTRICUM</div>",
  g3:"<div class=\"g-kick sA\">PROVEN RESULT · 2023</div><div class=\"g-huge sB\">+<span id=\"convCount\" style=\"color:#fff\">0</span><span>%</span></div><svg class=\"s3-chart\" viewBox=\"0 0 140 40\"><polyline class=\"s3-line\" pathLength=\"100\" points=\"4,34 26,30 48,32 70,22 92,24 114,10 136,4\" fill=\"none\"/><circle class=\"s3-dot\" cx=\"136\" cy=\"4\" r=\"4\"/></svg><div class=\"g-cap s3-c\">CONVERSION · GOLFDISCOUNTSTORE.NL</div><div class=\"g-sub s3-d\">Website optimized, marketplaces managed, e-mail automation implemented.</div>",
- g4:"<div class=\"g-kick sA\">FIRMWARE · UPDATED DAILY</div><div class=\"g-emoji s4-bot\">🤖</div><div class=\"g-main sB\">Builds his own<br>AI tools</div><div class=\"s4-term\"><span class=\"s4-type\">&gt; ai_tool.build() ✓ live</span></div><div class=\"g-sub s4-d\">Internal apps and tools built with AI. Webshop partly automated, strong ROI.</div>",
- g5:"<div class=\"g-kick sA\">THE JOURNEY</div><div class=\"g-main s5-years\"><span class=\"s5-y1\">2014</span><span class=\"s5-arrow\">⟶</span><span class=\"s5-y2\">2026</span></div><svg class=\"s5-stairs\" viewBox=\"0 0 150 74\"><polyline class=\"s5-path\" pathLength=\"100\" points=\"6,68 40,68 40,48 74,48 74,28 108,28 108,8 140,8\" fill=\"none\"/><circle class=\"s5-top\" cx=\"140\" cy=\"8\" r=\"4.5\"/></svg><div class=\"g-cap s5-labels\"><span class=\"l1\">SHELF STACKER</span> <span class=\"p1\">▸</span> <span class=\"l2\">ENTREPRENEUR</span> <span class=\"p2\">▸</span> <span class=\"l3\">MANAGER</span></div><div class=\"g-sub s5-d\">Twelve years of practice. Climbed every rung himself — and measured it.</div>",
+ g4:"<div class=\"g-kick sA\">FIRMWARE · UPDATED DAILY</div><div class=\"g-emoji s4-bot\"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><rect x='6' y='8' width='12' height='9' rx='2'/><line x1='12' y1='8' x2='12' y2='5.5'/><circle cx='12' cy='4.5' r='1' fill='currentColor' stroke='none'/><circle cx='9.5' cy='12' r='1' fill='currentColor' stroke='none'/><circle cx='14.5' cy='12' r='1' fill='currentColor' stroke='none'/><path d='M9.5 14.8h5'/></svg></div><div class=\"g-main sB\">Builds his own<br>AI tools</div><div class=\"s4-term\"><span class=\"s4-type\">&gt; ai_tool.build() ✓ live</span></div><div class=\"g-sub s4-d\">Internal apps and tools built with AI. Webshop partly automated, strong ROI.</div>",
+ g5:"<div class=\"g-kick sA\">THE JOURNEY</div><div class=\"g-main s5-years\"><span class=\"s5-y1\">2014</span><span class=\"s5-arrow\">⟶</span><span class=\"s5-y2\">2026</span></div><svg class=\"s5-stairs\" viewBox=\"0 0 150 74\"><polyline class=\"s5-path\" pathLength=\"100\" points=\"6,68 40,68 40,48 74,48 74,28 108,28 108,8 140,8\" fill=\"none\"/><circle class=\"s5-top\" cx=\"140\" cy=\"8\" r=\"4.5\"/></svg><div class=\"g-cap s5-labels\"><span class=\"l1\">SHELF STACKER</span> <span class=\"p1\">▸</span> <span class=\"l2\">ENTREPRENEUR</span> <span class=\"p2\">▸</span> <span class=\"l3\">MANAGER</span></div><div class=\"g-sub s5-d\">Twelve years of practice. Climbed every rung himself, and measured it.</div>",
  usps:"<div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">📈</span><span><b>+50% conversion, proven</b><small>Golfdiscountstore.nl, 2023</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">⚙️</span><span><b>Strong ROI through automation</b><small>webshop partly automated</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🤖</span><span><b>AI literacy 5/5</b><small>builds his own internal apps &amp; tools</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🛡️</span><span><b>Honest about mistakes</b><small>incl. verified 1-star review</small></span></div>",
  vhead:"VERSION",
  vb3:"Data &amp; Automation",
  priceline:"€75 <small>/hr freelance</small>",
  rate:"<a class=\"rate-src\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">✓ rate verified on Upwork ($75)</a>",
- kort:"✓ Code STRONGHIRE applied — first call always free",
- ctabuy:"🛒 Add to cart",
- wabtn:"💬 WhatsApp directly — reply within 1 hour",
- watchline:"🔥 <span id=\"watchers\">3</span> recruiters are viewing this profile right now",
+ kort:"✓ Code STRONGHIRE applied · first call always free",
+ ctabuy:"Add to cart",
+ wabtn:"💬 WhatsApp directly · reply within 1 hour",
+ watchline:"<span id=\"watchers\">3</span> recruiters are viewing this profile right now",
  trust:"<span>Lifetime warranty on work ethic</span><span>Guarantee: honesty</span><span>Free delivery across NL</span>",
  "h-bundle":"Frequently bought together",
- bundle:"<div class=\"bitem\"><div class=\"bi\">👤</div><b>Sjoerd Spil</b><small>2026 edition</small></div><div class=\"bplus\">+</div><div class=\"bitem\"><div class=\"bi\">📊</div><b>KPI dashboards</b><small>daily insight, live</small></div><div class=\"bplus\">+</div><div class=\"bitem\"><div class=\"bi\">🤖</div><b>Own AI tools</b><small>built in-house</small></div><div class=\"bsum\"><div class=\"bs1\">Bundle price:</div><div class=\"bs2\">1 good conversation</div><button class=\"btn buy co-open\" data-bundle=\"1\">Add bundle to cart</button></div>",
+ bundle:"<div class=\"bitem\"><div class=\"bi\"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='8' r='3.5'/><path d='M5.5 19c1.5-3.5 4-5 6.5-5s5 1.5 6.5 5'/></svg></div><b>Sjoerd Spil</b><small>2026 edition</small></div><div class=\"bplus\">+</div><div class=\"bitem\"><div class=\"bi\"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M4 20h16' stroke-width='1.8'/><line x1='7.5' y1='17' x2='7.5' y2='12'/><line x1='12' y1='17' x2='12' y2='7'/><line x1='16.5' y1='17' x2='16.5' y2='14'/></svg></div><b>KPI dashboards</b><small>daily insight, live</small></div><div class=\"bplus\">+</div><div class=\"bitem\"><div class=\"bi\"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><rect x='6' y='8' width='12' height='9' rx='2'/><line x1='12' y1='8' x2='12' y2='5.5'/><circle cx='12' cy='4.5' r='1' fill='currentColor' stroke='none'/><circle cx='9.5' cy='12' r='1' fill='currentColor' stroke='none'/><circle cx='14.5' cy='12' r='1' fill='currentColor' stroke='none'/><path d='M9.5 14.8h5'/></svg></div><b>Own AI tools</b><small>built in-house</small></div><div class=\"bsum\"><div class=\"bs1\">Bundle price:</div><div class=\"bs2\">1 good conversation</div><button class=\"btn buy co-open\" data-bundle=\"1\">Add bundle to cart</button></div>",
  "h-maker":"From the maker",
- maker:"<p>I started out stacking shelves at the Albert Heijn supermarket in Castricum in 2014. After that I laid floors, ran covid tests on the island of Texel and guarded a hotel at night. Meanwhile I built webshops, sold on Amazon and ran a social media agency — which made me almost no money, because I was too nice with my pricing. Most expensive lesson ever, best lesson ever.</p><p>Today I'm marketing manager at Ronada, doing what I do best: reading data, automating processes and growing webshops. No diplomas on the wall — but twelve years of practice, 238 international jobs and a webshop that partly runs itself.</p><p>This page is exactly how I work: measure, test, optimize. If you've read this far, it works.</p><div class=\"maker-sig\">— Sjoerd</div>",
+ maker:"<p>I started out stacking shelves at the Albert Heijn supermarket in Castricum in 2014. After that I laid floors, ran covid tests on the island of Texel and guarded a hotel at night. Meanwhile I built webshops, sold on Amazon and ran a social media agency, which made me almost no money because I was too nice with my pricing. Most expensive lesson ever, best lesson ever.</p><p>Today I'm marketing manager at Ronada, doing what I do best: reading data, automating processes and growing webshops. No diplomas on the wall, but twelve years of practice, 238 international jobs and a webshop that partly runs itself.</p><p>This page is how I work: measure first, then improve. If you've read this far, it works.</p><div class=\"maker-sig\">— Sjoerd</div>",
  "h-specs":"Specifications",
- specs:"<div class=\"spec\"><span class=\"k\">Brand</span><span class=\"v\">Spil</span></div><div class=\"spec\"><span class=\"k\">In operation since</span><span class=\"v\">2014 — uninterrupted</span></div><div class=\"spec\"><span class=\"k\">Location</span><span class=\"v\">Castricum, Noord-Holland</span></div><div class=\"spec\"><span class=\"k\">Powered by</span><span class=\"v\">data</span></div><div class=\"spec\"><span class=\"k\">Acceleration</span><span class=\"v\">automation</span></div><div class=\"spec\"><span class=\"k\">Comes standard with</span><span class=\"v\">growth</span></div><div class=\"spec\"><span class=\"k\">Languages</span><span class=\"v\">Dutch &amp; English — fluent</span></div><div class=\"spec\"><span class=\"k\">Education</span><span class=\"v\">MAVO/VMBO + the school of practice</span></div><div class=\"spec\"><span class=\"k\">Firmware</span><span class=\"v\">updated daily (AI)</span></div><div class=\"spec\"><span class=\"k\">Compatibility</span><span class=\"v\">teams, external partners, marketplaces</span></div><div class=\"spec\"><span class=\"k\">Internationally proven</span><span class=\"v\">238 Upwork jobs (★4.7)</span></div><div class=\"spec\"><span class=\"k\">Energy consumption</span><span class=\"v\">low — calm under pressure</span></div><div class=\"spec\"><span class=\"k\">Night mode</span><span class=\"v\">tested &amp; approved ('22–'23)</span></div><div class=\"spec\"><span class=\"k\">Size</span><span class=\"v\">fits any team — runs large in responsibility</span></div>",
+ specs:"<div class=\"spec\"><span class=\"k\">Brand</span><span class=\"v\">Spil</span></div><div class=\"spec\"><span class=\"k\">In operation since</span><span class=\"v\">2014, uninterrupted</span></div><div class=\"spec\"><span class=\"k\">Location</span><span class=\"v\">Castricum, Noord-Holland</span></div><div class=\"spec\"><span class=\"k\">Powered by</span><span class=\"v\">data</span></div><div class=\"spec\"><span class=\"k\">Acceleration</span><span class=\"v\">automation</span></div><div class=\"spec\"><span class=\"k\">Comes standard with</span><span class=\"v\">growth</span></div><div class=\"spec\"><span class=\"k\">Languages</span><span class=\"v\">Dutch &amp; English — fluent</span></div><div class=\"spec\"><span class=\"k\">Education</span><span class=\"v\">MAVO/VMBO + the school of practice</span></div><div class=\"spec\"><span class=\"k\">Firmware</span><span class=\"v\">updated daily (AI)</span></div><div class=\"spec\"><span class=\"k\">Compatibility</span><span class=\"v\">teams, external partners, marketplaces</span></div><div class=\"spec\"><span class=\"k\">Internationally proven</span><span class=\"v\">238 Upwork jobs (★4.7)</span></div><div class=\"spec\"><span class=\"k\">Energy consumption</span><span class=\"v\">low (calm under pressure)</span></div><div class=\"spec\"><span class=\"k\">Night mode</span><span class=\"v\">tested &amp; approved ('22–'23)</span></div><div class=\"spec\"><span class=\"k\">Size</span><span class=\"v\">fits any team, runs large in responsibility</span></div>",
  "h-inbox":"What's in the box?",
- inbox:"<div><b>12+ years of hands-on experience</b> — from shop floor to management</div><div><b>2 own ventures</b> worth of insights (Spindle Supply &amp; Social Spil)</div><div><b>KPI structure &amp; dashboards</b> — set up, manage, monitor</div><div><b>Marketplace &amp; webshop optimization</b> — incl. a proven +50% conversion</div><div><b>Self-built AI tools</b> — internal apps, automations</div><div><b>Honesty about mistakes</b> — including the Social Spil lesson (see reviews)</div>",
+ inbox:"<div><b>12+ years of hands-on experience</b>: from shop floor to management</div><div><b>2 own ventures</b> worth of insights (Spindle Supply &amp; Social Spil)</div><div><b>KPI structure &amp; dashboards</b>: set up, manage, monitor</div><div><b>Marketplace &amp; webshop optimization</b>: incl. a proven +50% conversion</div><div><b>Self-built AI tools</b>: internal apps, automations</div><div><b>Honesty about mistakes</b>: including the Social Spil lesson (see reviews)</div>",
  "h-cmp":"Compare with similar products",
  cmp:"<tr><th>Feature</th><th class=\"me\">Sjoerd Spil (2026 edition)</th><th>Average marketer</th></tr><tr><td>Ran his own businesses</td><td class=\"me yes\">✓ two</td><td class=\"no\">—</td></tr><tr><td>Proven conversion uplift</td><td class=\"me yes\">✓ +50%</td><td class=\"no\">\"involved in growth\"</td></tr><tr><td>Builds his own AI tools</td><td class=\"me yes\">✓</td><td class=\"no\">uses ChatGPT sometimes</td></tr><tr><td>Openly admits mistakes</td><td class=\"me yes\">✓ documented</td><td class=\"no\">\"perfectionism\"</td></tr><tr><td>Worked his way up from shelf stacker</td><td class=\"me yes\">✓ the whole ladder</td><td class=\"no\">—</td></tr><tr><td>Works night shifts if needed</td><td class=\"me yes\">✓ (prefers not to anymore)</td><td class=\"no\">✗</td></tr><tr><td>Dashboards live daily</td><td class=\"me yes\">✓</td><td class=\"no\">quarterly reporting</td></tr><tr><td>Independently verified client reviews</td><td class=\"me yes\">✓ 135 on Upwork (★4.7)</td><td class=\"no\">\"references on request\"</td></tr>",
  "h-rev":"Reviews <small>9 roles · 12 years in service</small>",
@@ -1367,51 +1373,51 @@ var EN={
  stickbtn:"Add to cart →",
  cohead:"Checkout",
  cosumb:"Sjoerd Spil — Marketing Manager (2026 edition)",
- cokort:"✓ Discount code STRONGHIRE applied — first call free",
- cointro:"Fill in your details and place the order — <b>Sjoerd will contact you personally</b> to schedule delivery (the conversation).",
+ cokort:"✓ Discount code STRONGHIRE applied · first call free",
+ cointro:"Fill in your details and place the order. Sjoerd will contact you personally to schedule delivery (the conversation).",
  lb1:"Name *", lb2:"Website *",
  lb3:"Current annual revenue <small>(optional)</small>",
  lb4:"Revenue target in 24 months <small>(optional)</small>",
  lb5:"Email *", lb6:"Phone <small>(optional)</small>",
- coerr:"Please fill in the required fields (*) — so Sjoerd knows who to call.",
+ coerr:"Please fill in the required fields (*), so Sjoerd knows who to call.",
  cosubmit:"Place order →",
- copriv:"🔒 Your details go directly and exclusively to Sjoerd Spil — no newsletters, no noise. Just a good conversation.",
+ copriv:"Your details go straight to Sjoerd and no one else.",
  cookie:"This site uses no cookies. Sjoerd just remembers things himself.",
  cookiebtn:"Fine",
  printjoke:"Printed this? Old school — Sjoerd automates this kind of thing. But nice to see you're taking it seriously. (The interactive version lives at sjoerdspil.com)",
  vb4:"Intern edition (2014) — sold out",
- palert:"🔔 Notify me of price drops",
+ palert:"Notify me of price drops",
  pcbtn:"Check delivery",
  lb7:"Delivery",
- ship:"<label class=\"so\"><input type=\"radio\" name=\"bezorging\" value=\"standaard\" checked><span><b>Standard</b> — introductory call<small>free</small></span></label><label class=\"so\"><input type=\"radio\" name=\"bezorging\" value=\"express\"><span><b>Express</b> — call today<small>also free</small></span></label><label class=\"so\"><input type=\"radio\" name=\"bezorging\" value=\"afhalen\"><span><b>Pickup in Castricum</b> — coffee's ready<small>travel time at your own expense</small></span></label>",
+ ship:"<label class=\"so\"><input type=\"radio\" name=\"bezorging\" value=\"standaard\" checked><span><b>Standard</b>: introductory call<small>free</small></span></label><label class=\"so\"><input type=\"radio\" name=\"bezorging\" value=\"express\"><span><b>Express</b>: call today<small>also free</small></span></label><label class=\"so\"><input type=\"radio\" name=\"bezorging\" value=\"afhalen\"><span><b>Pickup in Castricum</b>: coffee's ready<small>travel time at your own expense</small></span></label>",
  track:"<div class=\"tstep t1\"><span class=\"td\">✓</span><span>Order received</span></div><div class=\"tstep t2\"><span class=\"td\">✓</span><span>Sjoerd has read it</span></div><div class=\"tstep t3\"><span class=\"td\">📞</span><span>Sjoerd will contact you</span></div>",
  "h-also":"Others also viewed",
- also:"<div class=\"acard\"><div class=\"aimg\"><span>🦄</span><i class=\"abadge\">UNAVAILABLE</i></div><h3>Junior with 10+ years of experience</h3><div class=\"astars\">☆☆☆☆☆</div><p>Doesn't exist. Not at other suppliers either.</p></div><div class=\"acard\"><div class=\"aimg\"><span>🙊</span><i class=\"abadge\">SOLD OUT</i></div><h3>Marketer who admits mistakes</h3><div class=\"astars\">★★★★★</div><p>Last one available: see top of this page.</p></div><div class=\"acard\"><div class=\"aimg\"><span>😐</span><i class=\"abadge\">PLENTY IN STOCK</i></div><h3>Average marketer</h3><div class=\"astars\">★★★☆☆</div><p>Available everywhere. Rating: MEH.</p></div>",
+ also:"<div class=\"acard\"><div class=\"aimg\"><span class='aico'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'><circle cx='12' cy='12' r='8.5'/><line x1='6.5' y1='6.5' x2='17.5' y2='17.5'/></svg></span><i class=\"abadge\">UNAVAILABLE</i></div><h3>Junior with 10+ years of experience</h3><div class=\"astars\">☆☆☆☆☆</div><p>Doesn't exist. Not at other suppliers either.</p></div><div class=\"acard\"><div class=\"aimg\"><span class='aico'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-5 4z'/><polyline points='9 10 11.2 12.2 15.5 8'/></svg></span><i class=\"abadge\">SOLD OUT</i></div><h3>Marketer who admits mistakes</h3><div class=\"astars\">★★★★★</div><p>Last one available: see top of this page.</p></div><div class=\"acard\"><div class=\"aimg\"><span class='aico'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'><circle cx='12' cy='12' r='8.5'/><circle cx='9' cy='10' r='1' fill='currentColor' stroke='none'/><circle cx='15' cy='10' r='1' fill='currentColor' stroke='none'/><line x1='9' y1='15' x2='15' y2='15'/></svg></span><i class=\"abadge\">PLENTY IN STOCK</i></div><h3>Average marketer</h3><div class=\"astars\">★★★☆☆</div><p>Available everywhere. Rating: MEH.</p></div>",
  chh:"Ask Sjoerd",
  chb:"Hi! 👋 Question about this product? I reply within the hour.",
  chbtn:"Open WhatsApp",
  doneh:"Order placed!",
- donep:"Thank you for your order. <b>Sjoerd will contact you personally</b> to schedule delivery: a good conversation about your webshop, your data and your growth targets. In a hurry? <a href=\"https://wa.me/31631157721\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--blue);font-weight:700\">WhatsApp directly</a> — reply within 1 hour.",
+ donep:"Thank you for your order. Sjoerd will contact you personally to schedule delivery: a good conversation about your webshop, your data and your growth targets. In a hurry? <a href=\"https://wa.me/31631157721\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--blue);font-weight:700\">WhatsApp directly</a>, reply within 1 hour.",
  doneb:"Continue shopping"
 };
 EN.rgrid="<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Growth targets comfortably exceeded\"</div><p>Webshop partly automated with strong ROI. Manages external partners, guards KPIs and made our daily results visible through dashboards. Builds his own AI tools on the side.</p><div class=\"who\">Ronada BV, Heiloo · Feb 2025 — present · <b>✓ verified employer</b></div></div>"
 +"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Conversion up by more than 50%\"</div><p>Website optimized with a focus on conversion, marketplaces managed, e-mail campaigns and automations set up. Also simply helped out in the physical store.</p><div class=\"who\">I-Shopz BV / Golfdiscountstore.nl, Uitgeest · 2023 · <b>✓ verified employer</b></div></div>"
-+"<div class=\"rcard upwork\"><span class=\"uptag\">INDEPENDENTLY VERIFIED · UPWORK</span><div class=\"up-grid\"><div><div class=\"rs\">★★★★<span class=\"star-part\">★</span> <b style=\"color:var(--ink);font-size:14px\">4.7</b> <span style=\"color:var(--mut);font-size:12px\">· 135 client reviews</span></div><div class=\"rt\">\"238 international jobs as CMO / Growth Strategist\"</div><p>During the Social Spil years he was also active on the world stage: <b>238 completed jobs</b> for international clients, under the motto <em>\"I help businesses scale smart &amp; sustainably.\"</em> Verifiable independently of this CV — the reviews are there in black and white.</p><div class=\"who\">Upwork · freelance · <b>✓ external platform, not editable by the seller</b></div></div><a class=\"btn upbtn\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">View profile on Upwork ↗</a></div></div>"
-+"<div class=\"rcard\"><div class=\"rs\">★<span class=\"off\">★★★★</span></div><div class=\"rt\">\"Barely any profit made\"</div><p>Social media agency with clients at home and abroad. Set up content processes, managed a team in India, automated the information flows — but was too nice with his pricing.</p><div class=\"who\">Social Spil, Castricum · 2019–2021 · <b>✓ verified (by himself)</b></div><div class=\"sellerreply\"><b>SELLER'S RESPONSE:</b> Absolutely right. Most expensive lesson ever, best lesson ever: margins, sales structure and scalability are built into the current version. — Sjoerd</div></div>"
-+"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Never slept on the job himself\"</div><p>Kept watch over the hotel and its guests as a night guard. Took responsibility for calm and safety and acted independently in unforeseen situations — in the middle of the night.</p><div class=\"who\">Hotel Huize Koningsbosch, Bakkum · 2022–2023 · <b>✓ verified employer</b></div></div>"
-+"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Independently ran a test site on Texel\"</div><p>Professional in busy and unexpected situations, guided visitors and kept a cool head at peak moments. Island-proof.</p><div class=\"who\">Covidia, Beverwijk / Texel · 2021–2022 · <b>✓ verified employer</b></div></div>"
++"<div class=\"rcard upwork\"><span class=\"uptag\">INDEPENDENTLY VERIFIED · UPWORK</span><div class=\"up-grid\"><div><div class=\"rs\">★★★★<span class=\"star-part\">★</span> <b style=\"color:var(--ink);font-size:14px\">4.7</b> <span style=\"color:var(--mut);font-size:12px\">· 135 client reviews</span></div><div class=\"rt\">\"238 international jobs as CMO / Growth Strategist\"</div><p>During the Social Spil years he was also active on the world stage: <b>238 completed jobs</b> for international clients, under the motto <em>\"I help businesses scale smart &amp; sustainably.\"</em> Verifiable independently of this CV: the reviews are there in black and white.</p><div class=\"who\">Upwork · freelance · <b>✓ external platform, not editable by the seller</b></div></div><a class=\"btn upbtn\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">View profile on Upwork ↗</a></div></div>"
++"<div class=\"rcard\"><div class=\"rs\">★<span class=\"off\">★★★★</span></div><div class=\"rt\">\"Barely any profit made\"</div><p>Social media agency with clients at home and abroad. Set up content processes, managed a team in India, automated the information flows. But he was too nice with his pricing.</p><div class=\"who\">Social Spil, Castricum · 2019–2021 · <b>✓ verified (by himself)</b></div><div class=\"sellerreply\"><b>SELLER'S RESPONSE:</b> Absolutely right. Most expensive lesson ever, best lesson ever: margins, sales structure and scalability are built into the current version. — Sjoerd</div></div>"
++"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Never slept on the job himself\"</div><p>Watched over the hotel and its guests at night. Calm, independent, reliable.</p><div class=\"who\">Hotel Huize Koningsbosch, Bakkum · 2022–2023 · <b>✓ verified employer</b></div></div>"
++"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Independently ran a test site on Texel\"</div><p>Ran our Texel site on his own. Stayed calm even when the queue got long.</p><div class=\"who\">Covidia, Beverwijk / Texel · 2021–2022 · <b>✓ verified employer</b></div></div>"
 +"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Sold on Amazon before it was cool\"</div><p>Product research, purchasing, sourcing from China and sales via Amazon.co.uk (2018–2019). Continuously developed, tested and improved commercial concepts.</p><div class=\"who\">Spindle Supply (own venture) · 2018 — present · <b>✓ verified</b></div></div>"
-+"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Started at the bottom, stacked everything\"</div><p>Stacking shelves, splitting and unloading goods, supporting daily store processes. The first rung of the ladder — never skipped.</p><div class=\"who\">Albert Heijn, Castricum · 2014–2017 · <b>✓ verified employer</b></div></div>"
-+"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Tight work, on the floor too\"</div><p>Laid and finished floors, customer-focused and precise on location. Physical, hands-on work with an eye for detail — the same precision that now lives in his dashboards.</p><div class=\"who\">Trickstyle, Castricum · 2017–2021 · <b>✓ verified employer</b></div></div>";
-EN.qa="<details open><summary>Is this CV serious?</summary><div class=\"a\">The numbers and the career: <b>100% real</b>. The format is a demonstration — this is what happens when someone who works on conversion optimization every day builds his own CV. Every trick on this page (urgency, social proof, reviews, bundles) is a technique Sjoerd uses professionally. You're experiencing his craft while reading it.</div></details>"
-+"<details><summary>Why is there only 1 in stock?</summary><div class=\"a\">Twelve years of practice, two of his own ventures, one honestly documented loss-making year and a proven +50% conversion in exactly this combination: that assembly line <b>stopped after one unit</b>.</div></details>"
-+"<details><summary>Does this product also do losses?</summary><div class=\"a\">Once, documented (see the 1-star review from Social Spil). Margins were too low because he was too nice with his pricing. That mistake was <b>honestly booked and processed into the current version</b>: margins, sales structure and scalability now come as standard.</div></details>"
-+"<details><summary>Is this product compatible with our team?</summary><div class=\"a\">Tested with external marketing agencies, a team in India, hotel guests at 3 a.m. and peak crowds at a test site on Texel. <b>Works with everyone</b> — and translates data into actions the whole team understands.</div></details>"
-+"<details><summary>What if we're not satisfied?</summary><div class=\"a\">A return has never been necessary. This model <b>measures its own performance</b> through KPIs and dashboards and adjusts itself. Not good? Gets better.</div></details>";
-EN.dbody="<div class=\"d-item\"><div class=\"dthumb\">SS</div><div><b>Sjoerd Spil — Marketing Manager<br>(2026 edition)</b><small>Version: unique copy · 1 unit</small></div><div class=\"dprice\">€75/hr</div></div><div class=\"d-note\">✓ Discount code STRONGHIRE applied — first call free</div><div class=\"d-rows\"><div class=\"d-row\"><span>Subtotal</span><span>1 good conversation</span></div><div class=\"d-row\"><span>Shipping</span><span>free (all of NL)</span></div><div class=\"d-row\"><span>Response time</span><span>within 1 hour on WhatsApp</span></div><div class=\"d-row tot\"><span>Total</span><span>€75/hr</span></div></div>";
++"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Started at the bottom, stacked everything\"</div><p>Stacked shelves, unloaded goods, never late. The first rung of the ladder.</p><div class=\"who\">Albert Heijn, Castricum · 2014–2017 · <b>✓ verified employer</b></div></div>"
++"<div class=\"rcard\"><div class=\"rs\">★★★★★</div><div class=\"rt\">\"Tight work, on the floor too\"</div><p>Laid and finished floors, neat and on time. Customers were happy.</p><div class=\"who\">Trickstyle, Castricum · 2017–2021 · <b>✓ verified employer</b></div></div>";
+EN.qa="<details open><summary>Is this CV serious?</summary><div class=\"a\">The numbers and the career: 100% real. The format is a demonstration: this is what happens when someone who works on conversion optimization every day builds his own CV. Every trick on this page (urgency, social proof, reviews, bundles) is a technique Sjoerd uses professionally. You're experiencing his craft while reading it.</div></details>"
++"<details><summary>Why is there only 1 in stock?</summary><div class=\"a\">Twelve years of practice, two of his own ventures, one honestly documented loss-making year and a proven +50% conversion in exactly this combination: that assembly line stopped after one unit.</div></details>"
++"<details><summary>Does this product also do losses?</summary><div class=\"a\">Once, documented (see the 1-star review from Social Spil). Margins were too low because he was too nice with his pricing. That mistake was honestly booked and processed into the current version: margins, sales structure and scalability now come as standard.</div></details>"
++"<details><summary>Is this product compatible with our team?</summary><div class=\"a\">Tested with external marketing agencies, a team in India, hotel guests at 3 a.m. and peak crowds at a test site on Texel. Works with everyone: and translates data into actions the whole team understands.</div></details>"
++"<details><summary>What if we're not satisfied?</summary><div class=\"a\">A return has never been necessary. This model measures its own performance through KPIs and dashboards and adjusts itself.</div></details>";
+EN.dbody="<div class=\"d-item\"><div class=\"dthumb\">SS</div><div><b>Sjoerd Spil — Marketing Manager<br>(2026 edition)</b><small>Version: unique copy · 1 unit</small></div><div class=\"dprice\">€75/hr</div></div><div class=\"d-note\">✓ Discount code STRONGHIRE applied · first call free</div><div class=\"d-rows\"><div class=\"d-row\"><span>Subtotal</span><span>1 good conversation</span></div><div class=\"d-row\"><span>Shipping</span><span>free (all of NL)</span></div><div class=\"d-row\"><span>Response time</span><span>within 1 hour on WhatsApp</span></div><div class=\"d-row tot\"><span>Total</span><span>€75/hr</span></div></div>";
 EN.coprice="€75/hr";
-EN.fin="<div><h4>Customer service</h4><a href=\"mailto:sjoerdspil@gmail.com\">✉️ sjoerdspil@gmail.com</a><a href=\"tel:+31631157721\">📞 +31 6 31157721</a><a href=\"#\">📍 Castricum, Noord-Holland</a><a href=\"#\">🕐 Response time: faster than the courier</a></div><div><h4>About SPIL.SHOP</h4><a href=\"#\">Our story: from shelf stacker to this page</a><a href=\"#reviews\">Reviews (9)</a><a href=\"#\">Sustainability: 100% reusable experience</a><a href=\"#\">Vacancies: no — we're looking for one</a></div><div><h4>Accepted currencies</h4><div class=\"f-pay\">✓ a challenging role in e-commerce &amp; data<br>✓ room for initiative<br>✓ a team that loves numbers<br>✗ vague promises</div></div>";
-EN.fbottom="© 2026 <b>SPIL.SHOP</b> — a demonstration of conversion optimization, by and about Sjoerd Spil.<br>This webshop sells exactly one product and has no regrets. CoC: Chamber of Chances.";
+EN.fin="<div><h4>Customer service</h4><a href=\"mailto:sjoerdspil@gmail.com\">sjoerdspil@gmail.com</a><a href=\"tel:+31631157721\">+31 6 31157721</a><a href=\"#\">Castricum, Noord-Holland</a><a href=\"#\">Response time: faster than the courier</a></div><div><h4>About SPIL.SHOP</h4><a href=\"#\">Our story: from shelf stacker to this page</a><a href=\"#reviews\">Reviews (9)</a><a href=\"#\">Sustainability: 100% reusable experience</a><a href=\"#\">Vacancies: no — we're looking for one</a></div><div><h4>Accepted currencies</h4><div class=\"f-pay\">✓ a challenging role in e-commerce &amp; data<br>✓ room for initiative<br>✓ a team that loves numbers<br>✗ vague promises</div></div>";
+EN.fbottom="© 2026 <b>SPIL.SHOP</b>: a demonstration of conversion optimization, by and about Sjoerd Spil.<br>This webshop sells exactly one product and has no regrets. CoC: Chamber of Chances.";
 var ATTRS=[
  ["#searchInput","placeholder","search: marketing manager with proven conversion…"],
  ["#coNaam","placeholder","Your name"],
