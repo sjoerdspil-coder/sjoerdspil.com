@@ -240,7 +240,13 @@ html[lang="en"] .g-meter .gm-doel::after{content:"GOAL"}
 .vbtn.on{border-color:var(--blue);color:var(--blue);font-weight:700;background:var(--blue-wash)}
 
 .pricebox{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:26px;margin-top:0}
-.was-line{font-size:12.5px;color:var(--mut);margin-top:4px}
+.rate-line{margin-top:8px;font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.rate-line b{font-size:17px;color:var(--ink)}
+.rate-src{color:var(--green);font-size:12px;font-weight:600;text-decoration:none}
+.rate-src:hover{text-decoration:underline}
+.servicebox{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:14px 16px;margin-top:12px}
+.servicebox .pc-row{margin-top:0}
+.servicebox .pricealert{margin-top:12px}
 .qty-row{margin-top:20px !important}
 .btn.save{margin-top:12px}
 .kort{margin-top:14px !important}
@@ -663,17 +669,19 @@ html:not(.js) .rev-dist .fill{width:100%}
 
       <div class="pricebox" id="pricebox">
         <div class="pricerow"><span class="rating-price" id="ratingPrice" title="Prijs is exclusief enthousiasme — dat zit er standaard bij.">STRONG HIRE <small>/ rating</small></span></div>
-        <div class="was-line" data-i18n="wasline">t.o.v. <span class="was">gemiddelde marketeer</span></div>
+        <div class="rate-line" data-i18n="rate"><b>$75</b>/uur freelance · vaste rol in overleg &nbsp;<a class="rate-src" href="https://www.upwork.com/freelancers/sjoerds4" target="_blank" rel="noopener">✓ tarief geverifieerd op Upwork</a></div>
         <div class="kort" data-i18n="kort">✓ Code STRONGHIRE toegepast — eerste gesprek altijd gratis</div>
-        <div><button class="pricealert" id="priceAlert" data-i18n="palert">🔔 Houd mij op de hoogte van prijsdalingen</button></div>
         <div class="qty-row">
           <button class="btn buy co-open" data-i18n="ctabuy">🛒 Toevoegen aan winkelwagen</button>
         </div>
         <a class="btn save" data-i18n="wabtn" href="https://wa.me/31631157721?text=Hoi%20Sjoerd%2C%20we%20zagen%20je%20profiel%20op%20SPIL.SHOP%20en%20willen%20graag%20in%20gesprek." target="_blank" rel="noopener">💬 App direct via WhatsApp — reactie binnen 1 uur</a>
         <div class="watchline" data-i18n="watchline">🔥 <span id="watchers">3</span> recruiters bekijken dit profiel nu</div>
+        <div class="trust" data-i18n="trust"><span>Levenslange garantie op werkethos</span><span>Waarborg: eerlijkheid</span><span>Gratis bezorging in heel NL</span></div>
+      </div>
+      <div class="servicebox">
         <div class="pc-row"><input id="pcIn" placeholder="1234 AB" maxlength="8" aria-label="Postcode"><button id="pcBtn" data-i18n="pcbtn">Check levertijd</button></div>
         <div class="pc-res" id="pcRes"></div>
-        <div class="trust" data-i18n="trust"><span>Levenslange garantie op werkethos</span><span>Waarborg: eerlijkheid</span><span>Gratis bezorging in heel NL</span></div>
+        <button class="pricealert" id="priceAlert" data-i18n="palert">🔔 Houd mij op de hoogte van prijsdalingen</button>
       </div>
     </div>
   </main>
@@ -1315,7 +1323,7 @@ var EN={
  usps:"<div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">📈</span><span><b>+50% conversion, proven</b><small>Golfdiscountstore.nl, 2023</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">⚙️</span><span><b>Strong ROI through automation</b><small>webshop partly automated</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🤖</span><span><b>AI literacy 5/5</b><small>builds his own internal apps &amp; tools</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🛡️</span><span><b>Honest about mistakes</b><small>incl. verified 1-star review</small></span></div>",
  vhead:"VERSION",
  vb3:"Data &amp; Automation",
- wasline:"vs. <span class=\"was\">the average marketer</span>",
+ rate:"<b>$75</b>/hr freelance · permanent role negotiable &nbsp;<a class=\"rate-src\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">✓ rate verified on Upwork</a>",
  kort:"✓ Code STRONGHIRE applied — first call always free",
  ctabuy:"🛒 Add to cart",
  wabtn:"💬 WhatsApp directly — reply within 1 hour",
