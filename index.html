@@ -240,6 +240,7 @@ html[lang="en"] .g-meter .gm-doel::after{content:"GOAL"}
 .vbtn.on{border-color:var(--blue);color:var(--blue);font-weight:700;background:var(--blue-wash)}
 
 .pricebox{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:26px;margin-top:0}
+.pricehead{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--mut);margin-bottom:6px}
 .rate-line{margin-top:8px;font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
 .rate-line b{font-size:17px;color:var(--ink)}
 .rate-src{color:var(--green);font-size:12px;font-weight:600;text-decoration:none}
@@ -686,8 +687,9 @@ html:not(.js) .rev-dist .fill{width:100%}
       </div>
 
       <div class="pricebox" id="pricebox">
-        <div class="pricerow"><span class="rating-price" id="ratingPrice" title="Prijs is exclusief enthousiasme — dat zit er standaard bij.">STRONG HIRE <small>/ rating</small></span></div>
-        <div class="rate-line" data-i18n="rate"><b>€75</b>/uur freelance · vaste rol in overleg &nbsp;<a class="rate-src" href="https://www.upwork.com/freelancers/sjoerds4" target="_blank" rel="noopener">✓ geverifieerd op Upwork ($75)</a></div>
+        <div class="pricehead" data-i18n="phead">BEOORDELING VAN WERKGEVERS</div>
+        <div class="pricerow"><span class="rating-price" id="ratingPrice" title="Prijs is exclusief enthousiasme — dat zit er standaard bij.">STRONG HIRE</span></div>
+        <div class="rate-line" data-i18n="rate"><b>€75</b>/uur freelance &nbsp;<a class="rate-src" href="https://www.upwork.com/freelancers/sjoerds4" target="_blank" rel="noopener">✓ geverifieerd op Upwork ($75)</a></div>
         <div class="kort" data-i18n="kort">✓ Code STRONGHIRE toegepast — eerste gesprek altijd gratis</div>
         <div class="qty-row">
           <button class="btn buy co-open" data-i18n="ctabuy">🛒 Toevoegen aan winkelwagen</button>
@@ -1340,7 +1342,8 @@ var EN={
  usps:"<div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">📈</span><span><b>+50% conversion, proven</b><small>Golfdiscountstore.nl, 2023</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">⚙️</span><span><b>Strong ROI through automation</b><small>webshop partly automated</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🤖</span><span><b>AI literacy 5/5</b><small>builds his own internal apps &amp; tools</small></span></div><div class=\"usp\"><span class=\"ui\" aria-hidden=\"true\">🛡️</span><span><b>Honest about mistakes</b><small>incl. verified 1-star review</small></span></div>",
  vhead:"VERSION",
  vb3:"Data &amp; Automation",
- rate:"<b>€75</b>/hr freelance · permanent role negotiable &nbsp;<a class=\"rate-src\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">✓ verified on Upwork ($75)</a>",
+ phead:"EMPLOYER RATING",
+ rate:"<b>€75</b>/hr freelance &nbsp;<a class=\"rate-src\" href=\"https://www.upwork.com/freelancers/sjoerds4\" target=\"_blank\" rel=\"noopener\">✓ verified on Upwork ($75)</a>",
  kort:"✓ Code STRONGHIRE applied — first call always free",
  ctabuy:"🛒 Add to cart",
  wabtn:"💬 WhatsApp directly — reply within 1 hour",
